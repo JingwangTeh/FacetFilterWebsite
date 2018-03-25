@@ -1,0 +1,461 @@
+/* *********** *
+ * Content CSS *
+ * *********** */
+
+.content {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+}
+/* Left Content */
+.left_content {
+	width: 400px;
+	background-color: #f2f2f2;
+	box-shadow: 1px 0px 1px lightgrey;
+	
+	float: left;
+	overflow: hidden;
+}
+/* Right Content */
+.right_content {	
+	width: 100%;
+	overflow: hidden;
+}
+/* Right Content Title */
+.right_content_title {
+	background-color: #f2f2f2;
+	border-left: 1px solid lightgrey;
+	border-bottom: 1px solid lightgrey;
+}
+.right_content_title h1{
+	width: 90%;
+	text-align: left;
+	font-size: 40px;
+	font-weight: bold;
+	color: #669999;
+	margin: 0 auto;
+}
+ 
+ /* ************** *
+ * Top Content Div *
+ * *************** */
+
+.top_content {
+	width: 100%;
+	background-color: #41d0f4;
+}
+#lockedSequenceDisplay {
+	padding: 3px;
+	display: block;
+}
+#lockedSequenceDisplay:empty {
+	display: none;
+}
+/* Locked Sequence Sections/Elements */
+#lockedSequenceDisplay > div{
+	font-size: 14px;
+	color: white;
+	
+	border: 1px solid grey;
+	border-radius: 5px;
+	margin: 2px 5px;
+	padding: 3px 8px;
+	display: inline-block;
+}
+#lockedSequenceDisplay > div:hover{
+	color: #1e0a82;
+	border: 3px solid #1e0a82;
+}
+#lockedSequenceDisplay > div:hover .hoverX {
+	font-weight: bold;
+	color: #1e0a82;
+}
+.lockedSequence_notLastSection {
+	background-color: #3393d2;
+}
+.lockedSequence_lastSection {
+	background-color: #d3345f;
+}
+ 
+/* ****************** *
+ * Left Content Divs *
+ * ****************** */
+
+/* Left Content Divs */
+.left_content > div{
+	overflow: hidden;
+	margin: 5px auto;
+	padding: 2px;
+}
+/* Search Container */
+.left_content_facetedSearch {
+}
+/* Sort Container */
+.left_content_facetedSort {
+}
+/* Filter Container */
+.left_content_facetedFilter {
+}
+
+/* ****************** *
+ * Right Content Divs *
+ * ****************** */
+
+/* Right Content Divs */
+.right_content > div{
+	width: 100%;
+}
+/* Result Container */
+.right_content_resultDisplay {
+}
+
+/* ************************* *
+ * Left Content CSS (Search) *
+ * ************************* */
+
+.left_content_facetedSearch {
+	width: 100%;
+	
+	white-space: nowrap;
+	
+	margin-top: 12px;
+	margin-bottom: 16px;
+}
+.left_content_facetedSearch > div {
+	width: 90%;
+	margin: 0px auto;
+	position: relative;
+}
+.left_content_facetedSearch input{
+	width: 100%;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	color: #669999;
+	
+	display: inline-block;
+	padding: 5px 0px;
+}
+ 
+/* *********************** *
+ * Left Content CSS (Sort) *
+ * *********************** */
+
+.left_content_facetedSort {
+	width: 100%;
+	margin: 0px auto;
+}	
+.left_content_facetedSort > div {
+	width: 90%;
+	text-align: center;
+	font-size: 12px;
+	
+	background-color: lightgrey;
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+	
+	overflow: hidden;
+	white-space: nowrap;
+	clear: both;
+	margin: 0px auto;
+	padding: 5px 0px;
+}
+.left_content_facetedSort label {
+	margin: 3px 0px;
+	display: inline-block;
+}
+
+/* ************************* *
+ * Left Content CSS (Filter) *
+ * ************************* */
+
+/* Faceted Filter Form and Form Div */
+#facetedFilterForm {
+}
+#facetedFilterForm_Content {
+	clear: both;
+	white-space: nowrap;
+}
+/* Form Sections */
+.facetedFilterFormSection {
+	max-height: 45px;
+	
+	border-bottom: 1px solid grey;
+	margin: 0px 3px;
+	overflow: hidden;
+}
+/* Section Title Div */
+.facetedFilterFormSection_Label {
+	width: 100%;
+	margin: 0px auto;
+	padding-top: 20px;
+}
+.facetedFilterFormSection_Label > div:first-child {
+	width: 65%;
+	text-align: center;
+	
+	padding: 0px 3px;
+	float: left;
+}
+.facetedFilterFormSection_Label > div:nth-child(2) {
+	width: 35%;
+	padding: 0px 3px;
+	float: right;
+}
+/* Section Title Div (Label) */
+.facetedFilterFormSection_Label label{
+	width: 100%;
+	font-size: 16px;
+	font-weight: bold;
+	color: #4d4d4d;
+}
+/* Section Title Div (Span) - Lock Text Span for Progressive Filter */
+.lockText {
+	width: 100%;
+	text-align: center;
+	font-size: 12px;
+	background-color: lightgrey;
+	
+	border: 1px solid grey;
+	border-radius: 5px;
+	display: inline-block;
+	
+	padding: 2px;
+}
+.lockText:hover {
+	color: lightgrey;
+	background-color: grey;
+}
+
+/* Section Input Div */
+.facetedFilterFormSection_Input {
+	width: 80%;
+	text-align: left;
+	
+	margin: 0px auto;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	clear: both;
+}
+/* Section Input */
+.facetedFilterFormSection_Input label{
+	font-size: 14px;
+	color: grey;
+}
+/* categories (super & sub) input */
+.facetedFilterFormSection_inputSuper {
+	margin-left: 5px;
+	margin-right: 1px;
+	margin-bottom: 8px;
+}
+.facetedFilterFormSection_inputSub {
+	margin-left: 20px;
+	margin-bottom: 8px;
+}
+
+/* ************************** *
+ * Left Content CSS (Buttons) *
+ * ************************** */
+
+/* Form Content Submit Button & Reset Link */
+.btns_container {
+	width: 100%;
+	margin: 0px auto;
+	padding: 0px;
+	padding-bottom: 40px;
+}
+.btns_container > div:first-child {
+	width: 50%;
+	padding: 0px 3px;
+	float: left;
+}
+.btns_container > div:nth-child(2) {
+	width: 50%;
+	padding: 0px 3px;
+	float: right;
+}
+.btns {
+	width: 100%;
+	
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	color: #669999;
+	
+	background-color: lightgrey;
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+	display: inline-block;
+	margin: 0px;
+	padding: 5px;
+	overflow: hidden;
+}
+.submitBtn {
+}
+.resetLink {
+}
+.resetLink,
+.resetLink:link,
+.resetLink:visited,
+.resetLink:hover,
+.resetLink:active {
+	text-decoration: none;
+}
+
+/* *************************** *
+ * Right Content CSS (Display) *
+ * *************************** */
+
+/* Result Content Div */
+.right_content_resultDisplay_content {
+	width: 90%;
+	margin: 15px auto;
+}
+/* Result Content - Result Div */
+.right_content_resultDisplay_content > div{
+	overflow: hidden;
+	word-wrap: break-word;
+	
+	border: 1px solid lightgrey;
+	margin: 15px auto;
+	position: relative;
+}
+
+.right_content_resultDisplay_content > div > div{
+}
+.right_content_resultDisplay_content > div > div div{
+	padding: 5px;
+}
+/* First Row */
+.right_content_resultDisplay_content > div > div:first-child {
+	text-align: center;
+	background-color: #669999;
+	display: flex;
+	overflow: hidden;
+}
+.right_content_resultDisplay_content > div > div:first-child > div:first-child{
+	min-width: 15%;
+	font-size: 18px;
+	font-style: italic;
+	line-height: 25px;
+	vertical-align: bottom;
+	
+	background-color: lightgreen;
+}
+.right_content_resultDisplay_content > div > div:first-child > div:nth-child(2){
+	width: 55%;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 50px;
+	vertical-align: bottom;
+	text-align: center;
+}
+.right_content_resultDisplay_content > div > div:first-child > div:nth-child(3){
+	min-width: 10%;
+	background-color: red;
+}
+.right_content_resultDisplay_content > div > div:first-child > div:nth-child(4){
+	min-width: 10%;
+	background-color: lightgreen;
+}
+.right_content_resultDisplay_content > div > div:first-child > div:nth-child(5){
+	min-width: 10%;
+	background-color: cyan;
+}
+/* Second Row */
+.right_content_resultDisplay_content > div > div:nth-child(2) {
+	overflow: hidden;
+	clear: both;
+	position: relative;
+}
+.right_content_resultDisplay_content > div > div:nth-child(2) span {
+	width: 15%;
+	font-weight: bold;
+	text-align: center;
+	display: inline-block;
+}
+.right_content_resultDisplay_content > div > div:nth-child(2) a:link,
+.right_content_resultDisplay_content > div > div:nth-child(2) a:visited,
+.right_content_resultDisplay_content > div > div:nth-child(2) a:hover,
+.right_content_resultDisplay_content > div > div:nth-child(2) a:active {
+	text-decoration: none;
+}
+.ext_link_imdb {
+	color: white;
+	background-color: lightgrey;
+	
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+/* Third Row */
+.right_content_resultDisplay_content > div > div:nth-child(3) {
+	overflow: hidden;
+	display: flex;
+	clear: both;
+}
+.right_content_resultDisplay_content > div > div:nth-child(3) > div{
+	width: 33.3334%;
+	text-align: center;
+	border: 1px solid lightgrey;
+}
+
+/* *********** *
+ * Utility CSS *
+ * *********** */
+ 
+.pushDiv {
+	max-width: 3px;
+	-webkit-transition: max-width 0.5s ease-out;
+	transition: max-width 0.5s ease-out;
+}
+.pushDiv:hover {
+	max-width: 1000px;
+    -webkit-transition: max-width 0.5s ease-out;
+	transition: max-width 0.5s ease-in;	
+}
+.pullDiv{
+}
+.pullDiv:hover { 
+}
+
+.shortenDiv {
+	-webkit-transition: max-height 0.8s ease-out;
+	transition: max-height 0.8s ease-out;
+}
+.shortenDiv:hover {
+}
+.extendDiv{
+	max-height: 1000px;
+    -webkit-transition: max-height 0.5s ease-out;
+	transition: max-height 0.5s ease-in;	
+}
+.extendDiv:hover {
+}
+
+.autocomplete_popup {
+	width: 100%;
+	font-size: 12px;
+	text-align: center;
+	
+	background-color: #e6eaf2;
+	display: block;
+	position: absolute;
+	top: 35px;
+	left: 0px;
+	z-index: 1;
+}
+.autocomplete_popup ul{
+}
+.autocomplete_popup li{
+	list-style-type: none;
+	padding: 8px 5px;
+	overflow: hidden;
+}
+.autocomplete_popup li:hover{
+	border: 1px solid grey;
+	border-radius: 5px;
+}
+#autocomplete_s {
+}

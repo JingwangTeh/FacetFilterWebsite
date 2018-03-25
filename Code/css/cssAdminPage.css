@@ -1,0 +1,583 @@
+/* *********** *
+ * Content CSS *
+ * *********** */
+
+.content {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+}
+/* Left Content */
+.left_content {
+	max-width: 2px;
+	
+	background-color: #f2f2f2;
+	box-shadow: 1px 0px 1px lightgrey;
+	
+	float: left;
+	overflow: hidden;
+	
+	-webkit-transition: max-width 1s;
+	transition: max-width 1s;
+}
+.left_content:hover {
+	max-width: 325px;
+	-webkit-transition: max-width 1s;
+	transition: max-width 1s;
+}
+/* Left Content Div */
+.left_content > div{
+	margin: 0 auto;
+}
+/* Right Content */
+.right_content {	
+	width: 100%;
+	min-height: 500px;
+	overflow: hidden;
+}
+/* Right Content Title */
+.right_content_title {
+	background-color: #f2f2f2;
+	border-left: 1px solid lightgrey;
+	border-bottom: 1px solid lightgrey;
+}
+.right_content_title h1{
+	width: 90%;
+	text-align: left;
+	font-size: 40px;
+	font-weight: bold;
+	color: #669999;
+	margin: 0 auto;
+}
+
+ /* ************** *
+ * Top Content Div *
+ * *************** */
+
+.top_content {
+	width: 100%;
+	background-color: #41d0f4;
+}
+#top_content_msg {
+	text-align: center;
+	font-weight: bold;
+	font-size: 24px;
+	
+	padding: 5px;
+	display: block;
+}
+#top_content_msg:empty {
+	display: none;
+}
+#top_content_msg > .success{
+	color: green;
+}
+#top_content_msg > .fail{
+	color: #ed2a34;
+}
+
+/* ********************** *
+ * Left Content CSS (Tab) *
+ * ********************** */
+
+ /* Left Content Tab Nav */
+.nav_devTabs {
+	text-align: center;
+}
+
+/* Left Content Tabs */
+.nav_devTabs button{
+	width: 100%;
+	font-size: 20px;
+	background-color: #f2f2f2;
+	
+	border: none;
+	padding: 15px 0px;
+	white-space: nowrap;
+}
+.nav_devTabs button:hover{
+	color: white;
+	background-color: grey;
+}
+.nav_devTabs button:focus{
+	outline: 0;
+}
+
+/* ****************** *
+ * Right Content Divs *
+ * ****************** */
+
+/* Right Content Divs */
+.right_content > div{
+	width: 100%;
+}
+/* Summary Div */
+#right_content_summary{
+}
+ /* Log Div */
+#right_content_log{
+	position: relative;
+	display: none;
+}
+#right_content_form{
+	display: none;
+}
+#right_content_api{
+	display: none;
+}
+
+/* *************************** *
+ * Right Content CSS (Summary) *
+ * *************************** */
+
+/* Summary Content */
+#right_content_summary_content {
+}
+/* Summary Content Tables, th, tr, td */
+#right_content_summary_content table{
+	width: 90%;
+	text-align: center;
+	
+	border-collapse: collapse;
+	margin: 15px auto;
+	padding: 20px;
+}
+#right_content_summary_content tr,
+#right_content_summary_content th,
+#right_content_summary_content td{
+	background-color: #f0f5f5;
+	border: 1px solid lightgrey;
+	padding: 5px;
+}
+#right_content_summary_content th{
+	font-size: 20px;
+	color: white;
+	background-color: #669999;
+}
+#right_content_summary_content td:first-child{
+	width: 25%;
+	font-weight: bold;
+}
+#right_content_summary_content td:nth-child(2){
+	width: 50%;
+}
+
+/* *********************** *
+ * Right Content CSS (Log) *
+ * *********************** */
+
+/* Log Download Form Div */
+#right_content_download_log{
+	text-align: center;
+	
+	position: absolute;
+	top: 7px;
+	right: 50px;
+}
+#right_content_download_log select{
+	width: 150px;
+	height: 35px;
+	font-size: 18px;
+	
+	color: white;
+    background-color: #24b2c2;
+	border-radius: 5px;
+	padding: 5px;
+}
+#right_content_download_log input{
+	width: 100px;
+	height: 35px;
+	font-size: 18px;
+	font-weight: bold;
+	
+	color: white;
+    background-color: #209dac;
+	border: none;
+	padding: 5px;
+}
+/* Log Details Div */
+#right_content_log_FileDetails {
+	width: 97%;
+	overflow: hidden;
+	margin: 15px auto;
+}
+/* Log Details Tables, th, tr, td */
+#right_content_log_FileDetails table{
+	width: 100%;
+	text-align: center;
+	
+	border-collapse: collapse;
+	padding: 20px;
+}
+#right_content_log_FileDetails tr,
+#right_content_log_FileDetails th,
+#right_content_log_FileDetails td{
+	background-color: #f0f5f5;
+	border: 1px solid lightgrey;
+	padding: 5px;
+}
+#right_content_log_FileDetails th{
+	font-size: 18px;
+	color: white;
+	background-color: #669999;
+}
+#right_content_log_FileDetails td{
+	font-size: 14px;
+}
+
+/* ************************ *
+ * Right Content CSS (Form) *
+ * ************************ */
+
+/* Form Content Navigation Tabs */
+.nav_formTabs {
+	width: 90%;
+	text-align: center;
+	margin: 15px auto;
+}
+.nav_formTabs button{
+	width: 31.5%;
+	font-size: 20px;
+	
+	background-color: white;
+	border: none;
+	word-wrap: break-word;
+	padding: 15px;
+}
+.nav_formTabs button:hover{
+	background-color: #e6e6e6;
+}
+.nav_formTabs button:focus{
+	outline: 0;
+}
+.nav_formTabs hr{
+	width: 100%;
+	height: 1px;
+	border: 3px solid #f2f2f2;
+	margin: 5px auto;
+}
+.formTabs_btn_active hr {
+	border: 3px solid red;
+}
+/* Form Content Div (Forms) */
+#right_content_forms {
+	width: 90%;
+	margin: 15px auto;
+}
+#right_content_forms > div{
+	text-align: center;
+}
+#right_content_update_form, 
+#right_content_delete_form {
+	display: none;
+}
+/* Form Content (Creation) */
+#creation_form_content {
+}
+#creation_form_legend{
+	font-size: 22px;
+	font-style: italic;
+	color: lightgrey;
+}
+/* Form Content Container & Section (Creation) */
+#creation_form_inputs_container{
+}
+.creation_form_inputs_section {
+	width: 65%;
+	text-align: center;
+	
+	border: 1px solid lightgrey;
+	padding: 15px;
+	margin: 5px auto;
+	word-wrap: break-word;
+}
+/* Form Content Section's Label, Input, and Error Span (Creation) */
+.creation_form_inputs_section > label{
+	width: 70%;
+	font-size: 22px;
+	font-weight: bold;
+	color: grey;
+	display: inline-block;
+}
+.creation_form_inputs_section > input{
+	width: 70%;
+	height: 35px;
+	font-size: 20px;
+	text-align: center;
+	color: #669999;
+	
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+	margin-top: 5px;
+	padding: 5px;
+}
+.creation_form_inputs_section > input:focus{
+	outline: #3dccdb solid 1px;
+	border-radius: 5px;
+}
+.creation_form_inputs_section > span{
+	color: red;
+	font-weight: bold;
+	display: block;
+}
+/* Form Content (Update) */
+#update_form_content {
+}
+#update_form_legend{
+	font-size: 22px;
+	font-style: italic;
+	color: lightgrey;
+}
+/* Form Content Search (Update) */
+#update_form_search{
+	width: 55%;
+	margin: 0px auto;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	position: relative;
+}
+#update_form_search label{
+	font-size: 32px;
+	font-weight: bold;
+	
+	color: #669999;
+	margin: 10px 0px;
+	display: inline-block;
+}
+#update_form_search input{
+	width: 100%;
+	height: 36px;
+	font-size: 22px;
+	text-align: center;
+	color: #669999;
+	
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+	padding: 25px 0px;
+}
+#update_form_search button{
+	width: 100%;
+	height: 32px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #669999;
+}
+/* Form Content Container & Section (Update) */
+#update_form_inputs_container{
+	/*display: none;*/
+}
+.update_form_inputs_section {
+	width: 65%;
+	text-align: center;
+	
+	border: 1px solid lightgrey;
+	padding: 15px;
+	margin: 5px auto;
+	word-wrap: break-word;
+}
+/* Form Content Section's Label, Input, and Error Span (Update) */
+.update_form_inputs_section > label{
+	width: 70%;
+	font-size: 22px;
+	font-weight: bold;
+	color: grey;
+	display: inline-block;
+}
+.update_form_inputs_section > input{
+	width: 70%;
+	height: 35px;
+	font-size: 20px;
+	text-align: center;
+	color: #669999;
+	
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+	margin-top: 5px;
+	padding: 5px;
+}
+.update_form_inputs_section > input:focus{
+	outline: #3dccdb solid 1px;
+	border-radius: 5px;
+}
+.update_form_inputs_section > span{
+	color: red;
+	font-weight: bold;
+	display: block;
+}
+/* Form Content (Delete) */
+#delete_form_content {
+}
+#delete_form_legend {
+	font-size: 22px;
+	font-style: italic;
+	color: lightgrey;
+}
+/* Form Content Search (Update) */
+#delete_form_search{
+	width: 55%;
+	margin: 0px auto;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	position: relative;
+}
+#delete_form_search label{
+	font-size: 32px;
+	font-weight: bold;
+	
+	color: #669999;
+	margin: 10px 0px;
+	display: inline-block;
+}
+#delete_form_search input{
+	width: 100%;
+	height: 36px;
+	font-size: 22px;
+	text-align: center;
+	color: #669999;
+	
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+	padding: 25px 0px;
+}
+#delete_form_search button{
+	width: 100%;
+	height: 32px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #669999;
+}
+/* Form Content Container & Section (Delete) */
+#delete_form_inputs_container {
+}
+.delete_form_inputs_section {
+}
+/* Form Content Section's Info Display Div (Delete) */
+.delete_form_inputs_section > div{
+}
+/* Form Content Section's Info (Delete) */
+.delete_form_inputs_section > div > div{
+	width: 45%;
+	
+	font-size: 20px;
+	word-wrap: break-word;
+	
+	color: #669999;
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+	padding: 0px;
+	margin: 5px auto;
+}
+.delete_form_inputs_section > div > div > div:first-child{
+	width: 50%;
+	text-align: right;
+	display: inline-block;
+}
+.delete_form_inputs_section > div > div > div:nth-child(2){
+	width: 50%;
+	text-align: left;
+	display: inline-block;
+	padding-left: 5px;
+}
+/* Form Content Submit Button & Reset Link */
+.forms_btns_container {
+	width: 65%;
+	margin: 0px auto;
+	margin-top: 30px;
+	padding: 0px;
+}
+.forms_btns_container > div:first-child {
+	width: 50%;
+	padding: 0px 15px;
+	float: left;
+}
+.forms_btns_container > div:nth-child(2) {
+	width: 50%;
+	padding: 0px 15px;
+	float: right;
+}
+.forms_btns {
+	width: 100%;
+	
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	color: #669999;
+	
+	background-color: lightgrey;
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+	display: inline-block;
+	margin: 0px;
+	padding: 5px;
+	overflow: hidden;
+}
+.formSubmitBtn {
+}
+.resetLink {
+}
+.resetLink,
+.resetLink:link,
+.resetLink:visited,
+.resetLink:hover,
+.resetLink:active {
+	text-decoration: none;
+}
+
+/* ************************ *
+ * Right Content CSS (API) *
+ * ************************ */
+
+#right_content_api_form {
+	width: 90%;
+	margin: 15px auto;
+}
+#api_form_legend {
+}
+#api_form_inputs_container {
+	padding: 5px;
+}
+
+/* *********** *
+ * Utility CSS *
+ * *********** */
+ 
+.shortenDiv {
+	max-height: 60px;
+	-webkit-transition: max-height 0.8s ease-out;
+	transition: max-height 0.8s ease-out;
+}
+.shortenDiv:hover { 
+	border: 3px solid black;
+}
+.extendDiv{
+	max-height: 10000px;
+    -webkit-transition: max-height 0.5s ease-out;
+	transition: max-height 0.5s ease-in;	
+}
+.extendDiv:hover { 
+	border: 3px solid black;
+}
+
+.autocomplete_popup {
+	width: 100%;
+	
+	background-color: #e6eaf2;
+	display: none;
+	position: absolute;
+	top: 107px;
+	left: 0px;
+	z-index: 1;
+}
+.autocomplete_popup li{
+	list-style-type: none;
+	padding: 8px 0px;
+}
+.autocomplete_popup li:hover{
+	border: 1px solid grey;
+	border-radius: 5px;
+}
+#autocomplete_u {
+}
+#autocomplete_d {
+}
